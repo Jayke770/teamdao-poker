@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.player {
+    @apply h-20 w-20 md:h-28 md:w-28  rounded-full;
+}
+@supports (backdrop-filter: blur(20px)) {
+    .translucent {
+      --tw-bg-opacity: 0.8 !important;
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+  }
+  .ms-200 {
+    --animate-duration: 200ms;
+}
+
+.ms-300 {
+    --animate-duration: 300ms;
+}
+
+.ms-400 {
+    --animate-duration: 400ms;
+}
+
+.ms-500 {
+    --animate-duration: 500ms;
+}
+
+.ms-600 {
+    --animate-duration: 600ms
+}
+
+.ms-700 {
+    --animate-duration: 700ms
+}
+
+.ms-800 {
+    --animate-duration: 800ms
+}
+
+.ms-900 {
+    --animate-duration: 900ms
+}
+
+.ms-slow {
+    --animate-duration: 2000ms
+}
+/* Sweetalert */
+.swal2-popup,
+.swal2-popup.swal2-toast {
+    @apply !bg-zinc-800 !text-zinc-300;
+}
